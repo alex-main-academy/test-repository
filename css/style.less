@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+input {
+    &:focus {
+        overflow: hidden;
+    }
+}
+a {
+    text-decoration: none;
+}
+
+
+body {
+    background: url(../img/header__effect.svg) no-repeat 80% 0 ;
+    background-color: rgb(54, 49, 49);
+}
+
+.header{
+    height: 100vh;
+}
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1360px;
+    margin: auto auto;
+    padding: 12.5px 0;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+
+    p {
+        max-width: 230px;
+        margin: 0 0 0 6px;
+    }
+}
+.header__link {
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 46px;
+    }
+}
+.header__link-item {
+    a {
+        font-family: Gotham Pro;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 15px;
+        color: white;
+    }
+}
+
+.header__content {
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+}
+.header__subtitle {
+    margin: 60px 0 0 0;
+    h3 {
+        font-family: Gotham Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 21px;
+        opacity: 0.7;
+        color: white;
+    }
+}
+.header__title {
+    margin: 25px 0 0 0;
+    max-width: 600px;
+    h1 {
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 44.5px;
+        line-height: 57px;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+.header__block {
+    display: flex;
+    max-width: 400px;
+    justify-content: space-between;
+
+    p {
+        margin: 30px 0 0 0;
+        font-family: Gotham Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 15px;
+        color: white;
+
+        span {
+            font-family: Gotham Pro;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 29px;
+            color: white;
+        }
+    }
+}
+.header__block-1, .header__block-2 {
+    max-width: 190px;    
+}
+.header__button {
+    margin: 40px 0 0 0;
+    button {
+        font-family: Gotham Pro;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 17px;
+        border: none;
+
+        width: 300px;
+        height: 65px;
+        background: #F2DDDE;
+        border-radius: 5px;
+        border-top-right-radius: 20px;
+    }
+}
+.header__image {
+    position: relative;
+    background: url(../img/header__ellipse.svg)no-repeat center;
+    background-size: 100%;
+    width: 50%;
+    img {
+        width: 100%;
+        z-index: 10;
+    }
+}
+.header__sales {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 100%;
+    left: -40%;
+    transform: translate(0, -100%);
+    z-index: 2;
+}
+.header__effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+.school {
+    padding: 100px 0 100px 0;
+    background-color: #1F1C1A;
+}
+.school__container {
+    max-width: 1170px;
+    margin: auto auto;
+}
+.school__title {
+    max-width: 722px;;
+    h2 {
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 46px;
+        line-height: 110%;
+        color: white;
+    }
+}
+.school__subtitle {
+    margin: 20px 0 0 0;
+    max-width: 700px;
+    h3 {
+        font-family: Gotham Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 130%;
+        color: white;
+    }
+}
+.school__content {
+    display: flex;
+    margin: 60px 0 0 0;
+}
+.school__image {
+    width: 60%;
+}
+.school__text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.school__text-title {
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 130%;
+    color: white;
+    max-width: 360px;
+}
+.school__text-text {
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 130%;
+    color: white;
+    max-width: 440px;
+    margin: 13px 0 0 0;
+}
