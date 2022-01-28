@@ -14,7 +14,7 @@ a {
 
 body {
     background: url(../img/header__effect.svg) no-repeat 80% 0 ;
-    background-color: rgb(54, 49, 49);
+    background-color: #2D2926;
 }
 
 .header{
@@ -127,9 +127,10 @@ body {
 
         width: 300px;
         height: 65px;
-        background: #F2DDDE;
+        background: #BC4F54;
         border-radius: 5px;
         border-top-right-radius: 20px;
+        color: white;
     }
 }
 .header__image {
@@ -151,13 +152,6 @@ body {
     transform: translate(0, -100%);
     z-index: 2;
 }
-.header__effect {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
 
 .school {
     padding: 100px 0 100px 0;
@@ -203,6 +197,9 @@ body {
     flex-direction: column;
     justify-content: space-around;
 }
+.school__text-group {
+    display: flex;
+}
 .school__text-title {
     font-family: Gotham Pro;
     font-style: normal;
@@ -210,7 +207,8 @@ body {
     font-size: 22px;
     line-height: 130%;
     color: white;
-    max-width: 360px;
+    max-width: 240px;
+    margin: 0 0 0 15px;
 }
 .school__text-text {
     font-family: Gotham Pro;
