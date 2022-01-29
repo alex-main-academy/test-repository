@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Стань топ мастером</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
     
@@ -14,8 +15,9 @@
             
             <nav class="header__menu">
                 <div class="header__logo">
-                    <img src="./img/header__logo.svg" alt="header logo">
-                    <p>Программа подготовки топ мастеров маникюра от самого крупного бренда в России и СНГ</p>
+                    <img src="./img/menu__back.svg" alt="back" class="menu__logo-back">
+                    <img src="./img/header__logo.svg" alt="header logo" class="header__logo-logo">
+                    <p>Получи профессию «ТОП мастера маникюра» <br> с дипломом и трудоустройством, от <br> крупнейшего бренда России</p>
                 </div>
                 <div class="header__link">
                     <ul>
@@ -24,6 +26,9 @@
                         <li class="header__link-item"><a href="#">Преподаватели</a></li>
                         <li class="header__link-item"><a href="#">Отзывы</a></li>
                         <li class="header__link-item"><a href="#">Контакты</a></li>
+                        <li class="header__link-burger">
+                            <img src="./img/icon/menu-burger-icon.svg" alt="burder">
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -37,6 +42,9 @@
                         <div class="header__title">
                             <h1>Стань топ мастером маникюра с доходом от 60 до 180 тысяч рублей</h1>
                         </div>
+                        <div class="header__button main__button button-mobile">
+                            <button>Полная программа курса</button>
+                        </div>
                         <div class="header__block">
                             <div class="header__block-1">
                                 <p><span>20-30</span>дней длится обучение</p>
@@ -47,13 +55,15 @@
                                 <p>Через <span>7000</span> р. в подарок комплект косметики</p>
                             </div>
                         </div>
-                        <div class="header__button main__button">
+                        <div class="header__button main__button button-desktop">
                             <button>Полная программа курса</button>
                         </div>
                     </div>
                     <div class="header__image">
-                        <img src="./img/header__image.webp" alt="img">
+                        <img src="./img/header__ellipse.svg" alt="img" class="header__ellipse">
+                        <img src="./img/header__effect.svg" alt="img" class="header__effect">
                         <img src="./img/header__sales.svg" alt="img" class="header__sales">
+                        <img src="./img/header__image.webp" alt="img" class="header__main">
                     </div>
                 </div>
             </div>
@@ -70,7 +80,7 @@
                     <h3>Вы сможете получить профессию топ мастера маникюра и гарантированно трудоустроиться уже через месяц обучения, или работать самостоятельно. </h3>
                 </div>
                 <div class="school__content">
-                    <div class="school__image">
+                    <div class="school__image school-desktop">
                         <img src="./img/school__image-1.svg" alt="img">
                         <img src="./img/school__image-1.svg" alt="img">
                     </div>
@@ -98,6 +108,9 @@
                             <p class="school__text-text">Топ мастера которых готовит Еми зарабатывают в 2-3 раза больше обычных мастеров. </p>
                             <p class="school__text-text">Стоимость одной услуги от 1500 до 5000 рублей. В день мастер может заработать до 10,000 рублей.</p>
                         </div>
+                    </div>
+                    <div class="school__image shool-mobile">
+                        <img src="./img/school__image-1.svg" alt="img">
                     </div>
                 </div>
             </div>
@@ -234,12 +247,15 @@
                     <p class="gifts__par-1">При оформлении обучения в этом месяце ты получишь набор косметики в подарок для работы и учёбы. Не нужно ничего покупать и искать. </p>
                     <p class="gifts__par-2">Ты получишь брендовую, качественную косметику E.Mi, которую мы производим на своих заводах в Ростове и Праге.</p>
                 </div>
-                <div class="gifts__button main__button">
+                <div class="gifts__button main__button gifts-desktop">
                     <button>Посмотреть подарок</button>
                 </div>
                 <img src="./img/gifts__image.webp" alt="img" class="gifts__image">
                 <div class="gifts__left">
                     <p>Осталось 40 подарочных комплектов</p>
+                </div>
+                <div class="gifts__button main__button gifts-mobile">
+                    <button>Посмотреть подарок</button>
                 </div>
             </div>
         </section>
@@ -256,7 +272,7 @@
                     <p><a href="#">Посмотрите, </a>как выглядит кабинет с уроками.</p>
                 </div>
                 <div class="learn__info">
-                    <div class="learn__image">
+                    <div class="learn__image learn-desktop">
                         <img src="./img/learn__image.svg" alt="img">
                     </div>
                     <div class="learn__text">
@@ -276,6 +292,9 @@
                             <p class="learn__text-title">Кураторы</p>
                             <p class="learn__text-text">Кураторы с опытом работы более 10 лет в компании E.Mi</p>
                         </div>
+                    </div>
+                    <div class="learn__image learn-mobile">
+                        <img src="./img/learn__image.svg" alt="img">
                     </div>
                 </div>
                 <div class="learn__team team">
@@ -399,6 +418,9 @@
                     </div>
                 </div>
                 <div class="star__block">
+                    <div class="star__image image-2 star-mobile">
+                        <img src="./img/star__image-2.webp" alt="img">
+                    </div>
                     <div class="star__text">
                         <p class="star__text-title">ЕКАТЕРИНА МИРОШНИЧЕНКО</p>
                         <p class="star__text-text">Основатель бренда E.Mi и нейл-кутюрье</p>
@@ -407,7 +429,7 @@
                         <p class="star__text-text">Автор и разработчик уникальных курсов и технологий модного маникюра</p>
                         <p class="star__text-par">Fresh Boom и Aqvin (2018), Нейл-Ювелир (2016), TEXTONE&Combiture (2014), «Объемный винтаж» (2013), «Бархатный песок и жидкие камни» (2012), «Эффект кракелюра и этнические принты» (2010), «Имитация кожи рептилий» (2009), «Золотое литье» (2008) и уникальных материалов для их выполнения: Charmicon, NailDress, Nailcrust, Gemty, EMPASTA «Черный тюльпан», «Бархатный песок»</p>
                     </div>
-                    <div class="star__image image-2">
+                    <div class="star__image image-2 star-desktop">
                         <img src="./img/star__image-2.webp" alt="img">
                     </div>
                 </div>
@@ -755,10 +777,29 @@
         </section>
 
         <section class="about">
-            <div class="about__container"></div>
+            <div class="about__container">
+                <h2 class="about__title">О программе</h2>
+                <p class="about__text">Программа подготовки ТоП мастера включает в себя <span>18 курсов при оформлении заявки сегодня.</span></p>
+                <p class="about__text">А также <span>диплом установленного образца, гарантию трудоустройства за 24 часа и подарочный набор косметики на сумму 7000 рублей</span> с бесплатной доставкой.</p>
+                <button class="about__button">Смотри программу курса</button>
+            </div>
         </section>
 
     </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img src="./img/footer__lofo.svg" alt="logo" class="footer__logo">
+            <p class="footer__par-1">ООО «Учебный Центр профессионального обучения Е.Ми»</p>
+            <p class="footer__par-2">ИНН/КПП: 6164204188/616401001, ОГРН: 1026103264945 344010</p>
+            <p class="footer__par-3">Юр. адрес: 344011, обл. Ростовская, г. Ростов-на-Дону, Малюгиной ул., д. 102/160, офис 9.1</p>
+            <p class="footer__par-4">Директор: Мирошниченко Вера Николаевна</p>
+            <p class="footer__par-5">Договор-оферта</p>
+            <p class="footer__par-6">Договор на оказание платных образовательных услуг</p>
+            <p class="footer__par-7">There is no design without discipline.</p>
+            <p class="footer__par-8">There is no discipline without intelligence.</p>
+        </div>
+    </footer>
 
     <script src="./js/main.js"></script>
 </body>
