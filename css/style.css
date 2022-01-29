@@ -1136,4 +1136,255 @@ body {
 }
 .video__block p {
   margin: 15px 0 15px 0;
+  color: white;
+  opacity: 0.8;
+  font-size: 18px;
+}
+.diplom {
+  padding: 100px 0 200px 0;
+  background: #1F1C1A;
+}
+.diplom__container {
+  max-width: 1170px;
+  margin: auto auto;
+  position: relative;
+}
+.diplom__title h2 {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 110%;
+  color: #FFFFFF;
+}
+.diplom__subtitle h3 {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin: 20px 0 0 0;
+}
+.diplom__image {
+  margin: 40px 0 0 -40px;
+  background: url(../img/diplom__back.svg) no-repeat 200px top / 40%;
+}
+.diplom__image img {
+  max-width: 100%;
+}
+.diplom__text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 65%;
+}
+.text__block {
+  width: 45%;
+  margin: 20px 0 0 0;
+}
+.text__title {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+.text__text {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin: 16px 0 0 0;
+}
+.diplom__galery {
+  position: absolute;
+  left: 95%;
+  top: 100%;
+  transform: translate(-95%, -100%);
+  background: url(../img/diplom__galery-back.png) no-repeat center / 100%;
+  width: 297px;
+  height: 600px;
+}
+.review {
+  background: #1F1C1A;
+  padding: 200px 0 100px 0;
+}
+.review__container {
+  max-width: 1170px;
+  margin: auto auto;
+}
+.review__title h2 {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 110%;
+  color: #FFFFFF;
+}
+.review__content {
+  margin: 60px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.review__block {
+  width: 22%;
+}
+.review__image {
+  max-width: 100%;
+}
+.review__block-title {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin: 32px 0 0 0;
+}
+.review__text {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin: 17px 0 0 0;
+}
+.review__button {
+  width: 185px;
+  height: 45px;
+  margin: 24px 0 0 0;
+  border: 2px solid #F2DDDE;
+  background: #F2DDDE;
+  border-radius: 5px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.74);
+  transition-duration: 300ms;
+}
+.review__button:hover {
+  background: none;
+  color: #F2DDDE;
+  cursor: pointer;
+}
+.work {
+  padding: 100px 0;
+  height: 500px;
+  background: url(../img/work__back.svg) no-repeat left 370px/50%;
+}
+.work__container {
+  max-width: 1170px;
+  margin: auto auto;
+  position: relative;
+}
+.work__title h2 {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 110%;
+  color: #FFFFFF;
+}
+.work__subtitle h3 {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 29px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin: 29px 0 0 0;
+  max-width: 700px;
+}
+.work__text {
+  max-width: 700px;
+}
+.work__text p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin: 54px 0 0 0;
+}
+.work__galery {
+  position: absolute;
+  left: 95%;
+  top: -15%;
+  transform: translate(-95%);
+  background: url(../img/diplom__galery-back.png) no-repeat center center / 297px, url(../img/galery__effect.svg) no-repeat center 10px/110%;
+  width: 400px;
+  height: 600px;
+}
+.company {
+  padding: 100px 0;
+}
+.why {
+  padding: 100px 0 200px 0;
+}
+.why__container {
+  max-width: 1170px;
+  margin: auto auto;
+}
+.why__title {
+  padding: 0 0 0 30px;
+}
+.why__title h2 {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 110%;
+  color: #FFFFFF;
+  max-width: 846px;
+}
+.why__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.why__block {
+  width: 45%;
+  margin: 40px 0 0 0;
+  padding: 60px 0 0 30px;
+}
+.why__back-1 {
+  background: url(../img/icon/why-icon-1.svg) no-repeat top left;
+}
+.why__back-2 {
+  background: url(../img/icon/why-icon-2.svg) no-repeat top left;
+}
+.why__back-3 {
+  background: url(../img/icon/why-icon-3.svg) no-repeat top left;
+}
+.why__back-4 {
+  background: url(../img/icon/why-icon-4.svg) no-repeat top left;
+}
+.why__par-1 {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+.why__par-2 {
+  margin: 14px 0 0 0;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFFFFF;
+  opacity: 0.8;
 }
