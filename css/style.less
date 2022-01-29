@@ -37,6 +37,9 @@ body {
     background-color: #1f1c1a;
     z-index: 20;
 }
+.menu-mobile {
+    display: none;
+}
 .header__logo {
     display: flex;
     align-items: center;
@@ -119,6 +122,7 @@ body {
     }
 }
 .header__block {
+    position: relative;
     display: flex;
     max-width: 400px;
     justify-content: space-between;
@@ -329,6 +333,7 @@ body {
     top: -35%;
     left: 90%;
     transform: translate(-90%);
+    z-index: -1;
 }
 .aim__container {
     max-width: 1170px;
@@ -482,6 +487,10 @@ body {
 }
 .invit__link {
     margin: 60px 0 0 0;
+
+    img {
+        max-width: 100%;
+    }
 }
 .invit__button {
     margin: 60px 0 0 0;
@@ -493,7 +502,7 @@ body {
 .price {
     position: relative;
     background-color: #F2DDDE;
-    padding: 50px;
+    padding: 50px 0;
 }
 .price__container {
     max-width: 1170px;
