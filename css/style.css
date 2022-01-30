@@ -96,6 +96,7 @@ body {
 }
 .menu__logo-back {
   z-index: -1;
+  width: 500px;
 }
 .header__content {
   position: relative;
@@ -121,12 +122,33 @@ body {
   display: flex;
 }
 .header__subtitle h3 .icon__link {
-  width: 25px;
-  height: 25px;
+  padding: 0 9px;
   border-radius: 50%;
-  background: #d3d3d3;
+  background: #f8f8f8;
   text-align: center;
   margin: 0 0 0 10px;
+  color: black;
+  font-size: 16px;
+  z-index: 1;
+}
+.header__subtitle h3 .icon__link::after {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  content: 'Пройди обучение за 30 дней, получи диплом, трудоустройство и плати потом';
+  position: absolute;
+  margin: 30px 0 0 0;
+  left: 29%;
+  width: 200px;
+  padding: 10px;
+  font-size: 12px;
+  font-family: 'GothamMedium';
+  line-height: 1.3;
+  opacity: 0;
+  transition-duration: 300ms;
+}
+.header__subtitle h3 .icon__link:hover::after {
+  opacity: 1;
 }
 .header__title {
   margin: 25px 0 0 0;
@@ -585,10 +607,29 @@ body {
   padding: 0 0 0 25px;
 }
 .price__block-1 p span {
-  padding: 0 8px ;
+  padding: 0 7px ;
   background: #2D2926;
   border-radius: 50%;
   color: white;
+  font-size: 14px;
+}
+.price__block-1 p span::after {
+  content: 'Оформляем рассрочку без первого взноса';
+  width: 160px;
+  background: white;
+  padding: 8px;
+  position: absolute;
+  color: black;
+  margin: -10px 0 0 20px;
+  font-size: 12px;
+  border-radius: 7px;
+  line-height: 1.3;
+  font-family: 'GothamBook';
+  transition-duration: 300ms;
+  opacity: 0;
+}
+.price__block-1 p span:hover::after {
+  opacity: 1;
 }
 .price__par-2 {
   margin: 26px 0 0 0;
@@ -697,6 +738,9 @@ body {
   transform: translate(-70%);
   z-index: 0;
 }
+.price__back-2 {
+  top: -7%;
+}
 .price__block-back {
   padding: 10px;
   box-shadow: 0 0 15px 3px #bbbbbb;
@@ -736,6 +780,25 @@ body {
   color: white;
   margin: 0 0 0 10px;
   font-size: 15px;
+}
+.price__final .icon__link::after {
+  position: absolute;
+  width: 200px;
+  content: 'Всего в программе — 18 курсов. Вы пройдёте первый курс за 30 дней. Мы сразу выдадим диплом и трудоустроим вас.';
+  font-size: 12px;
+  padding: 10px;
+  background-color: white;
+  margin: -25px 0 0 20px;
+  border-radius: 10px;
+  color: black;
+  line-height: 1.3;
+  font-family: 'GothamBook';
+  box-shadow: 0 0 10px 5px #b9b9b9;
+  opacity: 0;
+  transition-duration: 300ms;
+}
+.price__final .icon__link:hover::after {
+  opacity: 1;
 }
 .price__final p {
   font-family: 'GothamBook';
@@ -1182,7 +1245,7 @@ body {
 .price__back-2 {
   position: absolute;
   width: 430px;
-  top: -14%;
+  top: -7%;
   left: 74%;
   transform: translate(-74%);
   z-index: 0;
@@ -1441,6 +1504,10 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition-duration: 300ms;
+}
+.left__arrow:hover {
+  background: #d3c1c2;
 }
 .left__arrow img {
   width: 24px;
@@ -1458,6 +1525,10 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition-duration: 300ms;
+}
+.right__arrow:hover {
+  background: #d3c1c2;
 }
 .right__arrow img {
   width: 24px;
@@ -1633,6 +1704,10 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition-duration: 300ms;
+}
+.left__work-arrow:hover {
+  background: #d3c1c2;
 }
 .left__work-arrow img {
   width: 24px;
@@ -1650,6 +1725,10 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition-duration: 300ms;
+}
+.right__work-arrow:hover {
+  background: #d3c1c2;
 }
 .right__work-arrow img {
   width: 24px;

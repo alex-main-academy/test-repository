@@ -34,6 +34,13 @@
     max-width: 960px;
     padding: 0 10px;
   }
+  .price__back-2 {
+    width: 150px;
+    top: 28%;
+  }
+  .price__sales {
+    display: none;
+  }
   .gifts__container {
     max-width: 960px;
     padding: 0 10px;
@@ -92,6 +99,9 @@
   }
 }
 @media (max-width: 958px) {
+  .price__back-2 {
+    display: none;
+  }
   .header__content {
     max-width: 576px;
   }
@@ -418,6 +428,11 @@
     margin: 100px 0 0 0;
     width: 300px;
   }
+  .header__subtitle h3 .icon__link {
+    width: 25px;
+    height: 20px;
+    padding: 0;
+  }
   .header__title {
     width: 300px;
     text-align: center;
@@ -577,6 +592,9 @@
     padding: 0 10px;
     text-align: center;
   }
+  .price__final .icon__link::after {
+    margin: 40px 0 0 -100px;
+  }
   .gifts {
     padding: 100px 0 50px 0;
   }
@@ -676,6 +694,10 @@
   }
   .price__back-2 {
     display: none;
+  }
+  .form__price-block input {
+    width: 60px;
+    height: 60px;
   }
   .prime {
     padding: 100px 0 50px 0;
