@@ -461,3 +461,40 @@ modalAboutClose[3].addEventListener('click', () => {
         body.style.overflow = 'visible'
     }
 })
+
+
+let mobileMenuButton = document.querySelector('.header__link-burger')
+let mobileMenuButton2 = document.querySelector('.header__burger-mobile')
+let mobileMenu = document.querySelector('.mobile__menu-burger')
+let mobileMenuClose = document.querySelector('.mobile__menu-close')
+
+mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.style = `
+        transition-duration: 300ms;
+        transform: translate(0);
+    `
+    body.style.overflow = 'hidden'
+})
+mobileMenuButton2.addEventListener('click', () => {
+    mobileMenu.style = `
+        transition-duration: 300ms;
+        transform: translate(0);
+    `
+    body.style.overflow = 'hidden'
+})
+mobileMenuClose.addEventListener('click', () => {
+    mobileMenu.style = `
+        transition-duration: 300ms;
+        transform: translate(-100%,0);
+    `
+    body.style.overflow = 'visible'
+})
+
+
+
+let form = document.querySelectorAll('#ltForm8754365 input')
+
+form.forEach((elem) => {
+    elem.setAttribute('required','')
+    console.log(elem)
+})
