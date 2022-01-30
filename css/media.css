@@ -99,6 +99,12 @@
   }
 }
 @media (max-width: 958px) {
+  .animate__block-2 {
+    display: none;
+  }
+  .animate__block {
+    display: none;
+  }
   .price__back-2 {
     display: none;
   }
@@ -391,6 +397,12 @@
   }
 }
 @media (max-width: 575px) {
+  .price__par-1 .icon__link::after {
+    margin: 30px 0 0 -80px;
+  }
+  .price__back {
+    display: none;
+  }
   .menu-desktop {
     display: none;
   }
@@ -443,7 +455,7 @@
   .header__image {
     z-index: 0;
     position: absolute;
-    left: 90%;
+    left: 80%;
     top: 90%;
     width: 120px;
   }
@@ -593,7 +605,7 @@
     text-align: center;
   }
   .price__final .icon__link::after {
-    margin: 40px 0 0 -100px;
+    margin: 40px 0 0 -150px;
   }
   .gifts {
     padding: 100px 0 50px 0;

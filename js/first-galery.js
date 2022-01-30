@@ -28,7 +28,7 @@ $(document).ready(function() {
             return
         }else{
             count--;
-            mainImg.hide().attr('src', imgArr[count-1]).fadeIn(300)
+            mainImg.attr('src', imgArr[count-1]).fadeIn(500)
         }
     })
 

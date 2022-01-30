@@ -533,3 +533,50 @@ for (let anchor of anchors) {
         })
     })
 }
+
+
+const headerMenu = document.querySelector('.header__menu')
+
+setInterval(() => {
+    if (document.documentElement.scrollTop > 50) {
+        headerMenu.style.background = '#1f1c1a'
+    }else{
+        headerMenu.style.background = 'none'
+    }
+},1000)
+
+animateBlock = document.querySelector('.animate__arrow');
+
+let toggle10 = false;
+setInterval(() => {
+    toggle10 = !toggle10
+
+    if (toggle10) {
+        animateBlock.style = `
+            transform: translate(-30px)
+        `
+    }else{
+        animateBlock.style = `
+        transform: translate(0)
+        `
+    }
+},1200)
+
+animateBlock2 = document.querySelector('.animate__arrow-img')
+let toggle11 = false
+
+setInterval(() => {
+    toggle11 = !toggle11
+
+    if (toggle11) {
+        animateBlock2.style = `
+            margin-top: 50px;
+            margin-left: 20px;
+        `
+    }else{
+        animateBlock2.style = `
+            margin-top: 20px;
+            margin-left: 0;
+        `
+    }
+},1200)
