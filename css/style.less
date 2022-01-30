@@ -1,12 +1,23 @@
 @font-face {
-    font-family: 'Futura';
-    src: url(../font/Futura\ Book\ font.ttf);
+    font-family: 'GothamMedium';
+    src: url(../font/Gotham-Medium.ttf);
+}
+@font-face {
+    font-family: 'GothamXLight';
+    src: url(../font/Gotham-XLight.ttf);
+}
+@font-face {
+    font-family: 'GothamBook';
+    src: url(../font/Gotham-Book.ttf);
+}
+@font-face {
+    font-family: 'GothamLight';
+    src: url(../font/Gotham-Light.ttf);
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Futura', sans-serif !important;
 }
 input {
     &:focus {
@@ -23,7 +34,6 @@ a {
 
 body {
     background-color: #2D2926;
-    font-family: 'Didact' !important;
 }
 
 .header{
@@ -49,10 +59,11 @@ body {
     position: relative;
 
     p {
+        font-family: 'GothamMedium';
         margin: 0 0 0 6px;
         z-index: 1;
         padding: 23px 0 0 12.5px;
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 .header__modal-click {
@@ -79,7 +90,7 @@ body {
 }
 .header__link-item {
     a {
-        font-family: Gotham Pro;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -112,7 +123,7 @@ body {
 .header__subtitle {
     margin: 60px 0 0 0;
     h3 {
-        font-family: Gotham Pro;
+        font-family: 'GothamLight';
         font-style: normal;
         font-weight: 300;
         font-size: 22px;
@@ -135,7 +146,7 @@ body {
     margin: 25px 0 0 0;
     max-width: 600px;
     h1 {
-        font-family: Futura PT;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: normal;
         text-transform: uppercase;
@@ -143,17 +154,17 @@ body {
 
         .header__span-1 {
             font-size: 41px;
-            line-height: 1.3;
+            line-height: 1.5;
             display: block;
         }
         .header__span-2 {
             font-size: 39px;
-            line-height: 1.3;
+            line-height: 1.5;
             display: block;
         }
         .header__span-3 {
             font-size: 32px;
-            line-height: 1.3;
+            line-height: 1.5;
             display: block;
         }
     }
@@ -166,7 +177,7 @@ body {
 
     p {
         margin: 50px 0 0 0;
-        font-family: Gotham Pro;
+        font-family: 'GothamLight';
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
@@ -197,7 +208,7 @@ body {
 .main__button {
     cursor: pointer;
     button {
-        font-family: Gotham Pro;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -232,6 +243,7 @@ body {
     }
 
     p {
+        font-family: 'GothamMedium';
         color: white;
         position: absolute;
         display: flex;
@@ -240,7 +252,7 @@ body {
         align-items: center;
         z-index: 3;
         top: 73%;
-        left: 20px;
+        left: 15px;
         span {
             font-size: 40px;
             display: block;
@@ -281,7 +293,7 @@ body {
 .school__title {
     max-width: 722px;;
     h2 {
-        font-family: Futura PT;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: normal;
         font-size: 46px;
@@ -293,12 +305,13 @@ body {
     margin: 20px 0 0 0;
     max-width: 700px;
     h3 {
-        font-family: Gotham Pro;
+        font-family: 'GothamLight';
         font-style: normal;
         font-weight: 300;
         font-size: 24px;
         line-height: 130%;
         color: white;
+        opacity: 0.8;
     }
 }
 .school__content {
@@ -325,7 +338,7 @@ body {
     display: flex;
 }
 .school__text-title {
-    font-family: Gotham Pro;
+    font-family: 'GothamMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -335,7 +348,7 @@ body {
     margin: 0 0 0 15px;
 }
 .school__text-text {
-    font-family: Gotham Pro;
+    font-family: 'GothamLight';
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -343,6 +356,7 @@ body {
     color: white;
     max-width: 440px;
     margin: 13px 0 0 0;
+    opacity: 0.8;
 }
 
 
@@ -371,7 +385,7 @@ body {
     width: 75%;
 
     p {
-        font-family: Gotham Pro;
+        font-family: 'GothamLight';
         font-style: normal;
         font-weight: 300;
         font-size: 52px;
@@ -379,7 +393,7 @@ body {
         max-width: 750px;
 
         span {
-            font-weight: bold;
+            font-family: 'GothamMedium';
         }
     }
 }
@@ -404,7 +418,7 @@ body {
 .aim__title {
     margin: 200px 0 0 0;
     h2 {
-        font-family: Futura PT;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: normal;
         font-size: 46px;
@@ -416,19 +430,20 @@ body {
 .aim__subtitle {
     margin: 20px 0 0 0;
     h3 {
-        font-family: Gotham Pro;
+        font-family: 'GothamLight';
         font-style: normal;
         font-weight: 300;
         font-size: 24px;
         line-height: 130%;
         max-width: 667px;
         color: white;
+        opacity: 0.8;
     }
 }
 .aim__par {
     margin: 70px 0 0 0;
     p {
-        font-family: Gotham Pro;
+        font-family: 'GothamMedium';
         font-style: normal;
         font-weight: 500;
         font-size: 22px;
@@ -456,7 +471,7 @@ body {
     text-align: center;
 
     p {
-        font-family: Gotham Pro;
+        font-family: 'GothamLight';
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
@@ -464,6 +479,7 @@ body {
         color: white;
         max-width: 115px;
         margin: auto auto;
+        opacity: 0.8;
     }
 }
 
@@ -498,18 +514,23 @@ body {
     border-radius: 50%;
     background: #423C38;
     margin: 0 20px 0 0;
+
+    img {
+        max-width: 100%;
+        border-radius: 50%;
+    }
 }
 .aim__text-title {
-    font-family: Gotham Pro;
+    font-family: 'GothamLight';
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 130%;
     color: white;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 .aim__text-name {
-    font-family: Gotham Pro;
+    font-family: 'GothamMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -517,7 +538,7 @@ body {
     color: white;
 }
 .aim__text-about {
-    font-family: Gotham Pro;
+    font-family: 'GothamLight';
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -540,7 +561,7 @@ body {
 .invit__title {
     h2 {
         color: white;
-        font-family: Futura PT;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: normal;
         font-size: 46px;
@@ -557,9 +578,6 @@ body {
 }
 .invit__button {
     margin: 60px 0 0 0;
-    button {
-
-    }
 }
 //-------------------------------//
 
@@ -577,7 +595,7 @@ body {
 .price__title {
     z-index: 2;
     h2 {
-        font-family: Futura PT;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: normal;
         font-size: 46px;
@@ -596,7 +614,7 @@ body {
     width: 25%;
     p {
         width: 260px;
-        font-family: Gotham Pro;
+        font-family: 'GothamLight';
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
@@ -604,6 +622,13 @@ body {
         color: #2D2926;
         background: url(../img/icon/price-icon.svg) no-repeat;
         padding: 0 0 0 25px;
+
+        span {
+            padding: 0 8px ;
+            background: #2D2926;
+            border-radius: 50%;
+            color: white;
+        }
     }
 }
 .price__par-2 {
@@ -614,7 +639,7 @@ body {
 
     p {
         width: 180px;
-        font-family: Gotham Pro;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -624,6 +649,7 @@ body {
 
         span {
             font-size: 20px;
+            font-family: 'GothamMedium';
         }
     }
 }
@@ -638,7 +664,7 @@ body {
     }
 }
 .price__par-title {
-    font-family: Gotham Pro;
+    font-family: 'GothamBook';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -647,7 +673,7 @@ body {
     font-weight: bold;
 }
 .price__par-text {
-    font-family: Gotham Pro;
+    font-family: 'GothamLight';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -665,7 +691,7 @@ body {
 
 .form__title {
     color: white;
-    font-family: Gotham Pro;
+    font-family: 'GothamMedium';
     font-weight: bold;
 }
 .form__block {
@@ -714,7 +740,7 @@ body {
 }
 .price__back {
     position: absolute;
-    width: 300px;
+    width: 200px;
     top: 42px;
     left: 70%;
     transform: translate(-70%);
@@ -748,14 +774,28 @@ body {
 .price__final {
     text-align: center;
     margin: 60px 0 0 0;
+    display: flex;
+    justify-content: center;
+
+    .icon__link {
+        padding: 0px 8px;
+        border-radius: 50%;
+        text-align: center;
+        background: rgb(32, 31, 31);
+        color: white;
+        margin: 0 0 0 10px;
+        font-size: 15px;
+    }
     p {
-        font-family: Gotham Pro;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: 500;
         font-size: 22px;
         line-height: 130%;
         text-align: center;
         color: #2D2926;
+        font-weight: bold;
+
     }
 }
 //-------------------------------//
@@ -772,7 +812,7 @@ body {
 }
 .gifts__title {
     h2 {
-        font-family: Futura PT;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: normal;
         font-size: 46px;
@@ -784,13 +824,14 @@ body {
 .gifts__text {
     margin: 53px 0 0 0;
     p {
-        font-family: Gotham Pro;
+        font-family: 'GothamLight';
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
         line-height: 130%;
         color: #FFFFFF;
         max-width: 475px;
+        opacity: 0.8;
     }
 }
 .gifts__par-2 {
@@ -801,6 +842,9 @@ body {
 }
 .gifts__button {
     margin: 55px 0 0 0;
+    button {
+        font-family: 'GothamMedium';
+    }
 }
 .gifts__image {
     position: absolute;
@@ -829,7 +873,7 @@ body {
     p {
         max-width: 116px;
         text-align: center;
-        font-family: Gotham Pro;
+        font-family: 'GothamMedium';
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -853,7 +897,7 @@ body {
 }
 .learn__title {
     h2 {
-        font-family: Futura PT;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: normal;
         font-size: 46px;
@@ -935,7 +979,7 @@ body {
     padding: 110px 0 0 0;
 }
 .learn__text-title {
-    font-family: Gotham Pro;
+    font-family: 'GothamMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -943,7 +987,7 @@ body {
     color: #FFFFFF;
 }
 .learn__text-text {
-    font-family: Gotham Pro;
+    font-family: 'GothamLight';
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -956,7 +1000,7 @@ body {
 
 .team__title {
     p {
-        font-family: Futura PT;
+        font-family: 'GothamMedium';
         font-style: normal;
         font-weight: normal;
         font-size: 32px;
@@ -984,7 +1028,7 @@ body {
     border: 2px solid #F2DDDE;
     box-sizing: border-box;
     border-radius: 5px;
-    font-family: Gotham Pro;
+    font-family: 'GothamMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -999,16 +1043,16 @@ body {
     }
 }
 .team__name {
-    font-family: Gotham Pro;
+    font-family: 'GothamMedium';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 130%;
     color: #FFFFFF;
     margin: 17px 0 0 0;
 }
 .team__text {
-    font-family: Gotham Pro;
+    font-family: 'GothamLight';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -1030,7 +1074,7 @@ body {
 }
 .result__title {
     h2 {
-        font-family: Futura PT;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: normal;
         font-size: 46px;
@@ -1049,7 +1093,7 @@ body {
     margin: 45px 0 0 0;
 }
 .result__text-1 {
-    font-family: Gotham Pro;
+    font-family: 'GothamMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -1058,14 +1102,14 @@ body {
     margin: 30px 0 0 0;
 }
 .result__text-2 {
-    font-family: Gotham Pro;
+    font-family: 'GothamLight';
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 130%;
     max-width: 575px;
     color: #FFFFFF;
-    opacity: 0.7;
+    opacity: 0.8;
     margin: 14px 0 0 0;
 }
 .result__image {
@@ -1093,12 +1137,11 @@ body {
 }
 .calc__title {
     h2 {
-        font-size: 46px;
+        font-size: 42px;
         color: white;
         text-align: center;
-        font-family: 'FuturaGotham',Arial,sans-serif;
+        font-family: 'GothamLight';
         line-height: 1.55;
-        font-weight: 600;
     }
 }
 .calc__block {
@@ -1165,7 +1208,7 @@ body {
 }
 .star__title {
     h2 {
-        font-family: Futura PT;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: normal;
         font-size: 46px;
@@ -1199,7 +1242,7 @@ body {
     width: 45%;
 }
 .star__text-title {
-    font-family: Gotham Pro;
+    font-family: 'GothamMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -1207,26 +1250,26 @@ body {
     color: #FFFFFF;
 }
 .star__text-text {
-    font-family: Gotham Pro;
+    font-family: 'GothamLight';
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 130%;
     color: #FFFFFF;
-    opacity: 0.7;
+    opacity: 0.8;
     max-width: 500px;
     margin: 26px 0 0 0;
     background: url(../img/icon/star__icon.svg) no-repeat 0 5px;
     padding: 0 0 0 35px;
 }
 .star__text-par {
-    font-family: Gotham Pro;
+    font-family: 'GothamLight';
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 130%;
     color: #FFFFFF;
-    opacity: 0.7;
+    opacity: 0.8;
     max-width: 500px;
     margin: 26px 0 0 0;
 }
@@ -1256,7 +1299,7 @@ body {
 }
 .prime__title {
     h2 {
-        font-family: Futura PT;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: normal;
         font-size: 46px;
@@ -1288,10 +1331,10 @@ body {
     p {
         max-width: 210px;
         text-align: center;
-        font-family: Gotham Pro;
+        font-family: 'GothamMedium';
         font-style: normal;
         font-weight: 500;
-        font-size: 22px;
+        font-size: 20px;
         line-height: 130%;
         text-align: center;
         color: #2D2926;
@@ -1304,7 +1347,7 @@ body {
     border-radius: 8px;
 
     p {
-        font-family: Gotham Pro;
+        font-family: 'GothamLisht';
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
@@ -1315,10 +1358,10 @@ body {
 
         span {
             color: white;
-            font-weight: bold;
+            font-family: 'GothamMedium';
         }
         a {
-            font-family: Gotham Pro;
+            font-family: 'GothamLight';
             font-style: normal;
             font-weight: 300;
             font-size: 18px;
@@ -1336,7 +1379,7 @@ body {
     background: #F2DDDE;
     border-radius: 5px;
     border: none;
-    font-family: Gotham Pro;
+    font-family: 'GothamMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -1365,23 +1408,23 @@ body {
 }
 .brand__title {
     h2 {
-        font-family: Futura PT;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: normal;
-        font-size: 46px;
+        font-size: 38px;
         line-height: 110%;
         color: #FFFFFF;
     }
 }
 .brand__subtitle {
     h3 {
-        font-family: Gotham Pro;
+        font-family: 'GothamLight';
         font-style: normal;
         font-weight: 300;
         font-size: 22px;
         line-height: 130%;
         color: #FFFFFF;
-        opacity: 0.7;
+        opacity: 0.8;
         margin: 20px 0 0 0;
     }
 }
@@ -1397,7 +1440,7 @@ body {
     p {
         margin: 10px 0 0 0;
         font-size: 18px;
-        font-weight: bold;
+        font-family: 'GothamMedium';
         color: white;
     }
 }
@@ -1416,10 +1459,11 @@ body {
     }
 
     p {
-        margin: 15px 0 15px 0;
+        margin: 25px 0 25px 0;
         color: white;
         opacity: 0.8;
         font-size: 18px;
+        font-family: 'GothamLight';
     }
 }
 //-------------------------------//
@@ -1438,7 +1482,7 @@ body {
 }
 .diplom__title {
     h2 {
-        font-family: Futura PT;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: normal;
         font-size: 46px;
@@ -1448,7 +1492,7 @@ body {
 }
 .diplom__subtitle {
     h3 {
-        font-family: Gotham Pro;
+        font-family: 'GothamMedium';
         font-style: normal;
         font-weight: 500;
         font-size: 22px;
@@ -1475,7 +1519,7 @@ body {
     margin: 20px 0 0 0;
 }
 .text__title {
-    font-family: Gotham Pro;
+    font-family: 'GothamMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -1483,7 +1527,7 @@ body {
     color: #FFFFFF;
 }
 .text__text {
-    font-family: Gotham Pro;
+    font-family: 'GothamLight';
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -1594,7 +1638,7 @@ body {
 }
 .review__title {
     h2 {
-        font-family: Futura PT;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: normal;
         font-size: 46px;
@@ -1615,7 +1659,7 @@ body {
     max-width: 100%;
 }
 .review__block-title {
-    font-family: Gotham Pro;
+    font-family: 'GothamMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 23px;
@@ -1624,7 +1668,7 @@ body {
     margin: 32px 0 0 0;
 }
 .review__text {
-    font-family: Gotham Pro;
+    font-family: 'GothamLight';
     font-style: normal;
     font-weight: 300;
     font-size:18px;
@@ -1640,7 +1684,7 @@ body {
     border: 2px solid #F2DDDE;
     background: #F2DDDE;
     border-radius: 5px;
-    font-family: Gotham Pro;
+    font-family: 'GothamMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1670,7 +1714,7 @@ body {
 }
 .work__title {
     h2 {
-        font-family: Futura PT;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: normal;
         font-size: 46px;
@@ -1680,7 +1724,7 @@ body {
 }
 .work__subtitle {
     h3 {
-        font-family: Gotham Pro;
+        font-family: 'GothamMedium';
         font-style: normal;
         font-weight: 500;
         font-size: 29px;
@@ -1693,7 +1737,7 @@ body {
 .work__text {
     max-width: 500px;
     p {
-        font-family: Gotham Pro;
+        font-family: 'GothamLight';
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
@@ -1782,10 +1826,10 @@ body {
 .why__title {
     padding: 0 0 0 30px;
     h2 {
-        font-family: Futura PT;
+        font-family: 'GothamBook';
         font-style: normal;
         font-weight: normal;
-        font-size: 46px;
+        font-size: 38px;
         line-height: 110%;
         color: #FFFFFF;
         max-width: 846px;
@@ -1815,7 +1859,7 @@ body {
 }
 
 .why__par-1 {
-    font-family: Gotham Pro;
+    font-family: 'GothamMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -1824,7 +1868,7 @@ body {
 }
 .why__par-2 {
     margin: 14px 0 0 0;
-    font-family: Gotham Pro;
+    font-family: 'GothamLight';
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -1844,7 +1888,7 @@ body {
     margin: auto auto;
 }
 .about__title {
-    font-family: Futura PT;
+    font-family: 'GothamBook';
     font-style: normal;
     font-weight: normal;
     font-size: 46px;
@@ -1853,7 +1897,7 @@ body {
     margin: 0 0 40px 0;
 }
 .about__text {
-    font-family: Gotham Pro;
+    font-family: 'GothamLight';
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
@@ -1866,10 +1910,11 @@ body {
         opacity: 1;
         font-weight: bold;
         color: white;
+        font-family: 'GothamBook';
     }
 }
 .about__button {
-    font-family: Gotham Pro;
+    font-family: 'GothamMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -1910,7 +1955,7 @@ body {
 .footer__par-1 {
     color: #ffffff;
     font-size: 14px;
-    font-family: 'FuturaGotham',Arial,sans-serif;
+    font-family: 'GothamLight';
     line-height: 1.55;
     font-weight: 300;
     margin: 40px 0 0 0;
@@ -1918,7 +1963,7 @@ body {
 .footer__par-2 {
     color: #ffffff;
     font-size: 14px;
-    font-family: 'FuturaGotham',Arial,sans-serif;
+    font-family: 'GothamLight';
     line-height: 1.55;
     font-weight: 300;
     margin: 15px 0 15px 0;
@@ -1926,7 +1971,7 @@ body {
 .footer__par-3, .footer__par-4, .footer__par-5, .footer__par-6 {
     color: #ffffff;
     font-size: 11px;
-    font-family: 'FuturaGotham',Arial,sans-serif;
+    font-family: 'GothamLight';
     line-height: 1.2;
     font-weight: 300;
 }
@@ -1937,7 +1982,7 @@ body {
 .footer__par-7, .footer__par-8 {
     color: #ffffff;
     font-size: 14px;
-    font-family: 'FuturaGotham',Arial,sans-serif;
+    font-family: 'GothamLight';
     line-height: 1.55;
     font-weight: 300;
 }
@@ -1989,6 +2034,7 @@ body {
   }
   .title {
     font-size: 32px;
+    font-family: 'GothamLight';
   }
   .block {
     font-size: 32px;
@@ -1997,22 +2043,27 @@ body {
     border-bottom: 2px solid gray;
     margin: 50px 0 0 0;
     text-align: center;
+    font-family: 'GothamLight';
   }
   .course {
     font-size: 28px;
     margin: 30px 0 0 0;
+    font-family: 'GothamBook';
   }
   .course__time {
     font-size: 18px;
     margin: 5px 0 0 0;
+    font-family: 'GothamLight';
   }
   .result__course {
     font-size: 26px;
     margin: 40px 0 0 0;
+    font-family: 'GothamBook';
   }
   .result__info {
     font-size: 18px;
     margin: 5px 0 0 0;
+    font-family: 'GothamLight';
   }
   .course__image {
     margin: 30px 0 0 0;
@@ -2030,10 +2081,12 @@ body {
   .course__list {
     font-size: 26px;
     margin: 50px 0 0 0;
+    font-family: 'GothamLight';
   }
   .course__lists {
     font-size: 26px;
     margin: 40px 0 0 0;
+    font-family: 'GothamBook';
   }
   .course__list {
     font-size: 18px;
@@ -2099,11 +2152,13 @@ body {
     margin: 30px 0 0 0 ;
     color: white;
     font-size: 32px;
+    font-family: 'GothamMedium';
   }
   .modal__gift-link {
     margin: 20px 0 0 0;
     color: white;
     font-size: 18px;
+    font-family: 'GothamLight';
   }
   .modal__team {
     position: fixed;
@@ -2140,11 +2195,13 @@ body {
     margin: 20px 0 0 0;
     color: white;
     font-size: 18px;
+    font-family: 'GothamLight';
   }
   .modal__team-subtitle {
     text-align: center;
     font-size: 16px;
     color: white;
+    font-family: 'GothamXLight';
   }
   .modal__team-title {
     color: white;
@@ -2152,6 +2209,7 @@ body {
     font-size: 28px;
     font-weight: bold;
     margin: 20px 0 0 0;
+    font-family: 'GothamMedium';
   }
   .modal__video-invite,
   .modal__video-prime,
@@ -2227,12 +2285,14 @@ body {
     max-width: 540px;
     text-align: center;
     margin: 20px 0 0 0;
+    font-family: 'GothamMedium';
   }
   .modal__about-text {
     margin: 20px auto 20px auto;
     color: white;
     font-size: 18px;
     max-width: 450px;
+    font-family: 'GothamLight';
   }
   .modal__about-close {
     position: fixed;
@@ -2276,6 +2336,7 @@ body {
     margin: 20px 0 20px 0;
     max-width: 100%;
     text-align: center;
+    font-family: 'GothamBook';
   }
   
 
@@ -2318,7 +2379,7 @@ body {
 
 //new form styles
 .form__price-wrapper {
-    background-color: black;
+    background-color: #1F1C1A;
     border-radius: 10px;
     padding: 50px 20px 30px 20px;
     margin: 50px 0 0 0;
