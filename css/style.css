@@ -45,6 +45,9 @@ body {
   padding: 23px 0 0 12.5px;
   font-size: 12px;
 }
+.header__modal-click {
+  cursor: pointer;
+}
 .header__logo-logo {
   z-index: 1;
   padding: 12.5px 0 0 12.5px;
@@ -457,6 +460,7 @@ body {
 }
 .invit__link {
   margin: 60px 0 0 0;
+  cursor: pointer;
 }
 .invit__link img {
   max-width: 100%;
@@ -837,6 +841,7 @@ body {
 }
 .team__block {
   width: 22%;
+  cursor: pointer;
 }
 .team__block img {
   max-width: 100%;
@@ -1292,6 +1297,71 @@ body {
   width: 297px;
   height: 600px;
 }
+.diplom__galery-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.diplom__galery-wrapper .galery__main-img {
+  max-width: 210px;
+  margin: 30px 0 0 0;
+}
+.left__arrow {
+  width: 50px;
+  height: 50px;
+  background-color: #F2DDDE;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -15%;
+  transform: translate(15%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.left__arrow img {
+  width: 24px;
+}
+.right__arrow {
+  width: 50px;
+  height: 50px;
+  background-color: #F2DDDE;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 115%;
+  transform: translate(-115%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.right__arrow img {
+  width: 24px;
+}
+.galery__pag {
+  width: 230px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+.galery__pag-item {
+  width: 7px;
+  height: 7px;
+  background: black;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+.galery__pag-item-active {
+  background-color: white;
+}
 .review {
   background: #1F1C1A;
   padding: 200px 0 100px 0;
@@ -1315,6 +1385,7 @@ body {
 }
 .review__block {
   width: 22%;
+  cursor: pointer;
 }
 .review__image {
   max-width: 100%;
@@ -1407,6 +1478,53 @@ body {
   background: url(../img/diplom__galery-back.png) no-repeat center center / 297px, url(../img/galery__effect.svg) no-repeat center 10px/110%;
   width: 400px;
   height: 600px;
+}
+.work__galery-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.work__galery-wrapper .galery__work-img {
+  max-width: 257px;
+  margin: 30px 0 0 0;
+}
+.left__work-arrow {
+  width: 50px;
+  height: 50px;
+  background-color: #F2DDDE;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.left__work-arrow img {
+  width: 24px;
+}
+.right__work-arrow {
+  width: 50px;
+  height: 50px;
+  background-color: #F2DDDE;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-100%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.right__work-arrow img {
+  width: 24px;
 }
 .company {
   padding: 100px 0;
