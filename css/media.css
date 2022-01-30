@@ -7,6 +7,10 @@
     margin: auto auto;
     padding: 0 10px;
   }
+  .header__image p {
+    top: 68%;
+    left: 10px;
+  }
   .school__container {
     max-width: 960px;
     padding: 0 10px;
@@ -117,14 +121,15 @@
     top: 100%;
     transform: translate(-100%, -120%);
   }
+  .header__image p {
+    left: -10px;
+  }
   .header__effect {
     left: 0;
   }
   .header__sales {
-    top: -20%;
-    left: 20%;
+    top: 120%;
     width: 100px;
-    display: none;
   }
   .school__container {
     max-width: 576px;
@@ -419,7 +424,16 @@
     z-index: 0;
     position: absolute;
     left: 90%;
+    top: 90%;
     width: 120px;
+  }
+  .header__image p {
+    font-size: 12px;
+    top: 80%;
+    left: -20px;
+  }
+  .header__image p span {
+    font-size: 16px;
   }
   .header__image .header__main {
     width: 150px;
@@ -429,6 +443,9 @@
   }
   .header__image .header__effect {
     display: none;
+  }
+  .header__image .header__sales {
+    top: 170%;
   }
   .school__container {
     max-width: 300px;

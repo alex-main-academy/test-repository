@@ -9,6 +9,12 @@
         margin: auto auto;
         padding: 0 10px;
     }
+    .header__image {
+        p {
+            top: 68%;
+            left: 10px;
+        }
+    }
 
     .school__container {
         max-width: 960px;
@@ -134,15 +140,17 @@
         left: 100%;
         top: 100%;
         transform: translate(-100%, -120%);
+
+        p {
+            left: -10px;
+        }
     }
     .header__effect {
         left: 0;
     }
     .header__sales {
-        top: -20%;
-        left: 20%;
+        top: 120%;
         width: 100px;
-        display: none;
     }
 
 
@@ -479,7 +487,18 @@
         z-index: 0;
         position: absolute;
         left: 90%;
+        top: 90%;
         width: 120px;
+
+        p {
+            font-size: 12px;
+            top: 80%;
+            left: -20px;
+
+            span {
+                font-size: 16px;
+            }
+        }
         .header__main {
             width: 150px;
         }
@@ -488,6 +507,9 @@
         }
         .header__effect {
             display: none;
+        }
+        .header__sales {
+            top: 170%;
         }
     }
 

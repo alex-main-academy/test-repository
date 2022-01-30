@@ -47,8 +47,22 @@ modalClose.addEventListener('click', () => {
 let modalGift = document.querySelector('.modal__gift')
 let modalGiftClose = document.querySelector('.modal__gift-close')
 let modalGiftButton = document.querySelector('.modal__gift-button')
+let modalGiftButtonMobile = document.querySelector('.modal__gift-button-mobile')
 
 let toggle2 = false;
+
+modalGiftButtonMobile.addEventListener('click', () => {
+    toggle = !toggle;
+
+    if (toggle) {
+        modalGift.style = `
+        transition-duration: 500ms;
+        opacity: 1;
+        visibility: visible;
+        `
+        body.style.overflow = 'hidden'
+    }
+})
 modalGiftButton.addEventListener('click', () => {
     toggle = !toggle;
 
@@ -498,3 +512,19 @@ form.forEach((elem) => {
     elem.setAttribute('required','')
     console.log(elem)
 })
+
+
+
+//link
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+    anchor.addEventListener('click', (e) => {
+        e.preventDefault()
+        const blockId = anchor.getAttribute('href')
+        document.querySelector('' + blockId).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        })
+    })
+}

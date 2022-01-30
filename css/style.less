@@ -17,6 +17,9 @@ a {
     text-decoration: none;
 }
 
+.body__wrapper {
+    overflow: hidden;
+}
 
 body {
     background-color: #2D2926;
@@ -116,6 +119,16 @@ body {
         line-height: 21px;
         opacity: 0.7;
         color: white;
+        display: flex;
+
+        .icon__link {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: rgb(211, 211, 211);
+            text-align: center;
+            margin: 0 0 0 10px;
+        }
     }
 }
 .header__title {
@@ -125,10 +138,24 @@ body {
         font-family: Futura PT;
         font-style: normal;
         font-weight: normal;
-        font-size: 44.5px;
-        line-height: 57px;
         text-transform: uppercase;
         color: white;
+
+        .header__span-1 {
+            font-size: 41px;
+            line-height: 1.3;
+            display: block;
+        }
+        .header__span-2 {
+            font-size: 39px;
+            line-height: 1.3;
+            display: block;
+        }
+        .header__span-3 {
+            font-size: 32px;
+            line-height: 1.3;
+            display: block;
+        }
     }
 }
 .header__block {
@@ -138,13 +165,15 @@ body {
     justify-content: space-between;
 
     p {
-        margin: 30px 0 0 0;
+        margin: 50px 0 0 0;
         font-family: Gotham Pro;
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
         line-height: 15px;
         color: white;
+        opacity: 0.8;
+        line-height: 1.7;
 
         span {
             font-family: Gotham Pro;
@@ -193,6 +222,7 @@ body {
     position: relative;
     background-size: 100%;
     width: 50%;
+    margin: 30px 0 0 40px;
     .header__main {
         width: 100%;
         z-index: 1;
@@ -200,13 +230,29 @@ body {
     .header__sales {
         width: 100%;
     }
+
+    p {
+        color: white;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        top: 73%;
+        left: 20px;
+        span {
+            font-size: 40px;
+            display: block;
+        }
+    }
 }
 .header__effect {
     position: absolute;
     z-index: -1;
-    left: 30px;
+    left: 80px;
     transform: rotate(-20deg);
-    width: 80%;
+    width: 100%;
 }
 .header__ellipse {
     position: absolute;
@@ -2030,7 +2076,7 @@ body {
     position: fixed;
     width: 48px;
     top: 1%;
-    left: 95%;
+    left: 85%;
     cursor: pointer;
   }
   .modal__gift-button {
@@ -2078,7 +2124,7 @@ body {
     position: fixed;
     width: 48px;
     top: 1%;
-    left: 95%;
+    left: 85%;
     cursor: pointer;
   }
   .modal__team-content {
@@ -2170,6 +2216,7 @@ body {
     max-width: 600px;
     height: auto;
     background-color: #292525;
+    padding: 0 10px;
   }
   .modal__about-content img {
     max-width: 100%;
@@ -2189,7 +2236,7 @@ body {
   }
   .modal__about-close {
     position: fixed;
-    left: 90%;
+    left: 85%;
     top: 1%;
     width: 48px;
     cursor: pointer;
@@ -2372,4 +2419,35 @@ body {
         left: 60%;
     }
 
+}
+
+.button__with-decor {
+    position: relative;
+    transition-duration: 300ms;
+
+    &:hover {
+        .button__decor-black {
+            background: white;
+        }
+    }
+}
+.button__decor {
+    position: absolute;
+    top: 7px;
+    left: 92%;
+    width:15px;
+    height: 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.button__decor-black {
+    position: absolute;
+    top: 7px;
+    left: 92%;
+    width:15px;
+    height: 15px;
+    background: rgb(26, 24, 24);
+    border-radius: 50%;
+
+    
 }
